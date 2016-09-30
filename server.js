@@ -73,7 +73,7 @@ var htmlTemplate =
         </div>
         <hr/>
                 <input type = "text" id = "name_1" placeholder = "Write a comment..."></input>   
-                <input type = "submit" value = "Submit" id="submit_btn"></input> 
+                <input type = "submit" value = "Submit" id="submit_btn1"></input> 
                 <ul id = "commentlist"></ul>
         </div>
     </body>
