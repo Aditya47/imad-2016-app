@@ -71,6 +71,9 @@ var htmlTemplate =
         <div>
             ${content}
         </div>
+        <hr/>
+                <input type = "text" id = "name_1" placeholder = "Write a comment..."></input>   
+                <input type = "submit" value = "Submit" id="submit_btn"></input> 
         </div>
     </body>
 </html>` ;
