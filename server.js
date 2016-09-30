@@ -66,7 +66,7 @@ var htmlTemplate =
             ${heading}
         </h3>
         <div>
-            ${data}
+            ${date}
         </div>
         <div>
             ${content}
