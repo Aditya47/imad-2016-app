@@ -84,12 +84,6 @@ app.get('/', function (req, res) {
 });
 
 
-
-app.get('/:articleName', function (req, res) {
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
-});
-
 var names = [];
 app.get('/submit-name',function(req,res){
     var name = req.query.name;
@@ -97,6 +91,13 @@ app.get('/submit-name',function(req,res){
     res.send(JSON.stringify(names));
     
 });
+
+
+app.get('/:articleName', function (req, res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
 
 var counter = 0;
 app.get('/counter', function(req,res){
