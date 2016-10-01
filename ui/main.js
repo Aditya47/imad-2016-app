@@ -65,8 +65,8 @@ submit1.onclick= function(){
             }
         };
 
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+var nameInput1 = document.getElementById('name1');
+var name = nameInput1.value;
 request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ name,true);
 request.send(null);    
 };
