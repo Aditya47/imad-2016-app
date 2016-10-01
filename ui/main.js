@@ -55,12 +55,12 @@ submit1.onclick= function(){
             if(request1.status===200){
                 var names = request1.responseText;
                 names = JSON.parse(names);
-                var list = '';
+                var list1 = '';
                 for(var i = 0;i<names.length;i++){
-                    list +='<li>' + names[i] + '</li>';
+                    list1 +='<li>' + names[i] + '</li>';
                 }
                 var ul = document.getElementById('commentlist');
-                ul.innerHTML = list;
+                ul.innerHTML = list1;
             }
             }
         };
