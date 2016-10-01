@@ -53,11 +53,11 @@ submit1.onclick= function(){
     request1.onreadystatechange = function(){
         if(request1.readyState === XMLHttpRequest.DONE){
             if(request1.status===200){
-                var names = request1.responseText;
-                names = JSON.parse(names);
+                var names1 = request1.responseText;
+                names1 = JSON.parse(names1);
                 var list1 = '';
-                for(var i = 0;i<names.length;i++){
-                    list1 +='<li>' + names[i] + '</li>';
+                for(var i = 0;i<names1.length;i++){
+                    list1 +='<li>' + names1[i] + '</li>';
                 }
                 var ul = document.getElementById('commentlist');
                 ul.innerHTML = list1;
