@@ -46,6 +46,31 @@ request.send(null);
 };
 
 
+var submit1 = document.getElementById('submit_btn1');
+submit1.onclick= function(){
+    var request1 = new XMLHttpRequest();
+    
+    request1.onreadystatechange = function(){
+        if(request1.readyState === XMLHttpRequest.DONE){
+            if(request1.status===200){
+                var names = request1.responseText;
+                names = JSON.parse(names);
+                var list = '';
+                for(var i = 0;i<names.length;i++){
+                    list +='<li>' + names[i] + '</li>';
+                }
+                var ul = document.getElementById('namelist');
+                ul.innerHTML = list;
+            }
+            }
+        };
+
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ name,true);
+request.send(null);    
+};
+
 
 
 
