@@ -46,7 +46,7 @@ request.send(null);
 };
 
 
-var submit1 = document.getElementById('submit_btn1');
+var submit1 = document.getElementById('submit_bt');
 submit1.onclick= function(){
     var request1 = new XMLHttpRequest();
     
@@ -65,7 +65,7 @@ submit1.onclick= function(){
             }
         };
 
-var nameInput1 = document.getElementById('name1');
+var nameInput1 = document.getElementById('nami');
 var name = nameInput1.value;
 request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ name,true);
 request.send(null);    
