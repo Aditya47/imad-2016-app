@@ -74,7 +74,7 @@ var htmlTemplate =
         <hr/>
         <div class = "footer">
                 <input type = "text" id = "name" placeholder = "Write a comment..."></input>   
-                <input type = "submit" value = "Submit" id="submit_btn"></input> 
+                <input type = "submit" value = "Submit" id="submit_btn1"></input> 
                 <ul id = "commentlist"></ul>
                 </div>
         </div>
