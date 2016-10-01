@@ -46,8 +46,7 @@ request.send(null);
 };
 
 
-var nameInput1 = document.getElementById('nami');
-var name = nameInput1.value;
+
 var submit1 = document.getElementById('submit_bt');
 submit1.onclick= function(){
     var request1 = new XMLHttpRequest();
@@ -67,8 +66,9 @@ submit1.onclick= function(){
             }
         };
 
-
-request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ name,true);
+var nameInput1 = document.getElementById('nami');
+var namie = nameInput1.value;
+request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ namie,true);
 request.send(null);    
 };
 
