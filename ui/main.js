@@ -47,31 +47,30 @@ request.send(null);
 
 
 
-var submita = document.getElementById('submit_bt');
-submita.onclick= function(){
-    var requesta = new XMLHttpRequest();
+var submit = document.getElementById('submit_btn');
+submit.onclick= function(){
+    var request = new XMLHttpRequest();
     
-    requesta.onreadystatechange = function(){
-        if(requesta.readyState === XMLHttpRequest.DONE){
-            if(requesta.status===200){
-                var names = requesta.responseText;
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            if(request.status===200){
+                var names = request.responseText;
                 names = JSON.parse(names);
                 var list = '';
                 for(var i = 0;i<names.length;i++){
                     list +='<li>' + names[i] + '</li>';
                 }
-                var ul = document.getElementById('cmtlist');
+                var ul = document.getElementById('namelist');
                 ul.innerHTML = list;
             }
             }
         };
 
-var nameInputa = document.getElementById('nami');
-var namei = nameInputa.value;
-request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ namei,true);
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+request.open('GET','http://aditya47.imad.hasura-app.io/submit-name?name='+ name,true);
 request.send(null);    
 };
-
 
 
                
