@@ -78,7 +78,9 @@ var htmlTemplate =
 }
 
 
-
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 
 
 var counter = 0;
