@@ -107,6 +107,14 @@ app.get('/submit-name',function(req,res){
     
 });
 
+var names1 = [];
+app.get('/submitname',function(req,res){
+    var name = req.query.name;
+    names1.push(name);
+    res.send(JSON.stringify(names1));
+    
+});
+
 app.get('/articleone', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
