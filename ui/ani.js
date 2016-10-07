@@ -1,3 +1,4 @@
+background(151, 244, 247);
 noStroke();
 
 // position of the car
@@ -21,4 +22,4 @@ draw = function() {
     x = x + 1;
 };
 
-draw;
+draw();
