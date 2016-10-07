@@ -119,10 +119,6 @@ app.get('/articleone', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-app.get('/articlefour', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ani.js'));
-});
-
 
 app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
