@@ -20,3 +20,5 @@ draw = function() {
     
     x = x + 1;
 };
+
+draw;
