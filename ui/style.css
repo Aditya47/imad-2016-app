@@ -4,7 +4,7 @@ body {
 }
 
 .center {
-    text-align: center;
+    text-align: right;
 }
 
 .text-big {
@@ -17,12 +17,13 @@ body {
 
 .img-medium {
     height: 200px;
+    padding-right:1000px;
 }
 .container{
                 
                 margin: 0 auto;
                 color: grey;
                 font-family: sans-serif;
-                padding-top: 2px;
-                padding-right:20px;
+                padding-top: 100px;
+                padding-right:1000px;
 }                
