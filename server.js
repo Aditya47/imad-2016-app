@@ -91,6 +91,10 @@ app.get('/', function (req, res) {
 });
 
 
+app.get('/app1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index6.html'));
+});
+
 var counter = 0;
 app.get('/counter', function(req,res){
     counter = counter +1;
